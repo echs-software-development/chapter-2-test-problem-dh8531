@@ -1,7 +1,22 @@
+import java.util.*;
 
+public class Numbers {
+    public static void main(String args[]) {
+        int a, b, sum;
+        float avg;
 
-public class Chapter2Test {
-  public static void main(String[] args) {
-  
-  }
+        Scanner buf = new Scanner(System.in);
+
+        System.out.print("Enter first number : ");
+        a = buf.nextInt();
+
+        System.out.print("Enter second number : ");
+        b = buf.nextInt();
+
+        /*Calculate sum and average*/
+        sum = a + b;
+        avg = (float)((a + b) / 2);
+
+        System.out.print("Sum : " + sum + "Average : " + avg);
+    }
 }
